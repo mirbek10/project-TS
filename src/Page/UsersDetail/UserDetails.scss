@@ -13,29 +13,50 @@
     gap: 24px;
     position: relative;
 
-    .back-button {
-        padding: 8px 16px;
-        background-color: transparent;
-        border: 1px solid #2e7d32;
-        color: #2e7d32;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        width: 130px;
-        font-size: clamp(14px, 2vw, 16px);
-        text-decoration: none;
-        font-weight: bold;
-        text-transform: uppercase;
-        box-shadow: 0 2px 8px rgba(0, 128, 0, 0.1);
-        position: sticky;
-        top: 20px;
-        left: 10px;
-        z-index: 10;
+.back-button {
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 1px solid #2e7d32;
+  color: #2e7d32;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 130px;
+  font-size: clamp(14px, 2vw, 16px);
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(0, 128, 0, 0.1);
+  position: sticky;
+  top: 20px;
+  left: 10px;
+  z-index: 10;
 
-        &:hover {
-            background-color: #e8f5e9;
-        }
-    }
+  &:hover {
+    background-color: #e8f5e9;
+  }
+
+  @media (max-width: 768px) {
+    width: 110px;
+    font-size: clamp(13px, 3vw, 15px);
+    padding: 6px 12px;
+    left: 5px;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    max-width: 300px;
+    font-size: 14px;
+    padding: 10px 0;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 12px auto;
+    display: block;
+    text-align: center;
+  }
+}
+
 
     .user-info {
         display: flex;
